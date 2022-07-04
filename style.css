@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#record,#capture{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    background-color: black;
+    border: 5px solid white;
+    z-index: 3;
+}
+
+#record {
+    top: 30vh;
+    right: 20px;
+}
+
+#capture{
+    top: 43vh;
+    right: 20px;
+}
+
+.video-cont{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+}
+
+#record div{
+    height: 60%;
+    width: 68%;
+    margin: auto;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#capture div {
+    height: 60%;
+    width: 68%;
+    margin: auto;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.record-animation {
+    animation: zoom-in-out 3s infinite;
+}
+
+.capture-animation {
+    animation: zoom-in-out 1s;
+}
+
+@keyframes zoom-in-out {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.filter-cont {
+    height: 60vh;
+    width: 6rem;
+    border: 1px solid wheat;
+    /* background-color: red; */
+    position: fixed;
+    top: 20vh;
+    left: 20px;
+    z-index: 3;
+    
+    
+}
+
+.filter{
+    width: 100%;
+    height: calc( 100% / 6 );
+    border: 1px solid white;
+    background-image: url(https://static.scientificamerican.com/sciam/cache/file/4E0744CD-793A-4EF8-B550B54F7F2C4406_source.jpg);
+    background-size: cover;
+    
+}
+
+.filter-div{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+
+.zoom-container {
+    height: 20vh;
+    width: 6rem;
+    border: 1px solid white;
+    position: fixed;
+    top: 5vh;
+    right: 20px;
+    z-index: 3;
+}
+
+.zoom-container div{
+    height: 50%;
+    width: 100%;
+    border: 1px solid white;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+#gallary {
+    
+    position: fixed;
+    z-index: 3;
+    bottom: 100px;
+    height: 3rem;
+    /* width: 2rem; */
+    right: 30px;
+}
